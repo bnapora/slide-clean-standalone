@@ -1,7 +1,15 @@
-## slide-clean-standalone
+# slide-clean-standalone
 
 ### Used to create standalone python environment to run script for anonymizing WSI  
 
+## Run Script  
+Run anonymize script
+    C:\path\to\python <path to script> <path to WSI>
+    eg: D:\development\slide-clean-standalone\python27\python D:\development\slide-clean-standalone\anonymize-slide.py D:\development\slide-clean-standalone\WSI\test1.svs
+
+
+### Notes:  
+- TODO - upgrade to python3
 ### Setup
 - Download slide-anonymize script  
   https://github.com/DeepPathology/AnonymizeSlide  
@@ -11,7 +19,3 @@
   https://pip.pypa.io/en/stable/installation/  
 - Run `python get-pip.py`
 - Install dependencies
-
-### Run Script  
-Run anonymize script
-    C:\path\to\python <path to script>
