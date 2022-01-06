@@ -10,7 +10,7 @@ Run anonymize script
 
 ### Notes:  
 - TODO - upgrade to python3
-### Setup
+Python 3 Setup - need to modify 2 dependencies
 - Download slide-anonymize script  
   https://github.com/DeepPathology/AnonymizeSlide  
 - Download embeddable python (ver 3.8.9)
