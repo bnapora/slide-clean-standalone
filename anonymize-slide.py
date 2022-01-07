@@ -16,11 +16,9 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #  GNU General Public License for more details.
 #
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 51 Franklin Street, Fifth Floor,
-#  Boston, MA 02110-1301 USA.
-#
+
+
+# CHANGES (Brian Napora) - added deletion of macro image with label image in SVS routine(BDN - 01/06/22)
 
 from __future__ import division
 from ConfigParser import RawConfigParser
@@ -479,14 +477,22 @@ def do_aperio_svs(filename):
             raise UnrecognizedFile
         accept(filename, 'SVS')
 
-        # Find and delete label
+        
         for directory in fh.directories:
             lines = directory.entries[IMAGE_DESCRIPTION].value().splitlines()
+
+            # Find and delete label
             if len(lines) >= 2 and lines[1].startswith('label '):
                 directory.delete(expected_prefix=LZW_CLEARCODE)
+                print('Thumbnail removed')
+            
+            # Find and delete macro
+            if len(lines) >= 2 and lines[1].startswith('macro '):
+                directory.delete()
+                print('Macro removed')
                 break
         else:
-            raise IOError("No label in SVS file")
+            raise IOError("No label or macro in SVS file")
 
 
 def do_hamamatsu_ndpi(filename):

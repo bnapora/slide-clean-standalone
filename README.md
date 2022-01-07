@@ -4,7 +4,7 @@
 
 ## Run Script  
 Run anonymize script
-    C:\path\to\python <path to script> <path to WSI>
+    C:\path\to\python <path to script> <path to WSI>  
     eg: D:\development\slide-clean-standalone\python27\python D:\development\slide-clean-standalone\anonymize-slide.py D:\development\slide-clean-standalone\WSI\test1.svs
 
 
