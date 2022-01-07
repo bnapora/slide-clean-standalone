@@ -8,7 +8,7 @@
 3.)	Run anonymize-slide.py script in the project folder  
   *  C:\path\to\python.exe <path to script> <path to WSI>    
     *  To anonymize more then one slide, simply add multiple paths to the ARGS  
-  **  For example (in current folder): D:\slide-clean-standalone\python27\python D:\slide-clean-standalone\anonymize-slide.py D:\slide-clean-standalone\WSI\test-1.svs  
+  *  For example (in current folder): D:\slide-clean-standalone\python27\python D:\slide-clean-standalone\anonymize-slide.py D:\slide-clean-standalone\WSI\test-1.svs  
 
 
 ### Notes:  
