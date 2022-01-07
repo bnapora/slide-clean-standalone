@@ -3,9 +3,12 @@
 ### Used to create standalone python environment to run script for anonymizing WSI  
 
 ## Run Script  
-Run anonymize script
-    C:\path\to\python <path to script> <path to WSI>  
-    eg: D:\development\slide-clean-standalone\python27\python D:\development\slide-clean-standalone\anonymize-slide.py D:\development\slide-clean-standalone\WSI\test1.svs
+1.)	Copy 1 or more slides into WSI folder in project folder  
+2.)	Open CMD prompt  
+3.)	Run anonymize-slide.py script in the project folder  
+  a.	C:\path\to\python.exe <path to script> <path to WSI>    
+    i.	To anonymize more then one slide, simply add multiple paths to the ARGS  
+  b.	For example (in current folder): D:\slide-clean-standalone\python27\python D:\slide-clean-standalone\anonymize-slide.py D:\slide-clean-standalone\WSI\test-1.svs  
 
 
 ### Notes:  
